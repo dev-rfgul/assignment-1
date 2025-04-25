@@ -20,4 +20,4 @@ function isAnagram(str1, str2) {
 module.exports = isAnagram;
 
 
-
+console.log("hello world i am testing the chrome extension for screen reccording")
