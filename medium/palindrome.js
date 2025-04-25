@@ -4,6 +4,17 @@
 */
 
 function isPalindrome(str) {
+  let a = 'anna'
+  // str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  for (i = 0; i < str.length; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return false;
+    }
+    return true;
+  }
+  // If we reach here, it means the string is a palindrome
+  // because all characters matched in pairs
   return true;
 }
 
